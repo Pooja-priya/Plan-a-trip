@@ -1,0 +1,355 @@
+<html>
+    <head>
+        <title>
+            Plan-a-trip
+        </title>
+
+        <style>
+            h3{
+                text-align: center;
+                height: 58px;
+               background-image: linear-gradient(to right,#1a1d21,#223d6b );
+               color: white;
+            }
+
+            #countDown{
+                color: white;
+                margin-top: -21px;
+                margin-left: 267px;
+            }
+
+                        .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            }
+
+            .nav-items {
+            float: right;
+            }
+
+            .nav-items a {
+            display: block;
+            padding: 8px;
+            color: black;
+            text-decoration: none;
+            }
+
+            .welcome-image{
+                width: 30%;
+                margin-top: 5%;
+                height: 70%;
+                margin-left: 12%;
+            }
+
+            .welcome-alignment{
+                margin-top: -29%;
+    margin-left: 56%;
+            }
+
+            h4{
+                font-size: 300%;
+                font-family: 'Noto Serif', serif;
+            }
+
+            button{
+                background-image: linear-gradient(to right,#1a1d21,#223d6b);
+                border-radius: 4%;
+    color: white;
+    height: 6.5%;
+    width: 26%;
+            }
+
+            .promo-image{
+                width: 100%;
+    height: 80%;
+            }
+
+            .promo-alignment{
+                margin-top: -19%;
+    color: white;
+    margin-left: 11%;
+            }
+
+            .end-of-line{
+                margin-top: 5%;
+            }
+
+            .form-inputs{
+                color: #1e1d57;
+                text-align: center;
+    font-size: 200%;
+            }
+
+            form{
+                flex-direction: column;
+                display: flex;
+                width: 36%;
+                line-height: 219%;
+                margin-left: 33%;
+                color: grey;
+            }
+
+          
+
+            input{
+                height: 35px;
+            }
+
+            footer{
+                background-image: linear-gradient(to right,#1a1d21,#223d6b);
+                color: white;
+    height: 47%;
+    width: 100%;
+            }
+
+            .block1{
+                width: 24.99999%;
+                line-height: 40px;
+                margin-left: 62px;
+            }
+            .block2{
+                width: 24.99999%;
+                line-height: 40px;
+            }
+            .block3{
+                width: 24.99999%;
+                line-height: 40px;
+            }
+            .block4{
+                width: 24.99999%;
+                margin-right: 69px;
+            }
+            ul{
+                list-style-type: none;
+            }
+
+            .weather-header{
+                background-color: #223d6b;
+    height: 28px;
+    color: white;
+            }
+        </style>
+
+    </head>
+    <body>
+        <article>
+            <header>
+                <h3>Book now to get exciting travel deals. Upto 40% off on credit card payments<br><b>Offers ends in <p id="countDown"></p></b>  </h3>
+            </header>
+
+           
+        </article>
+        <ul class="nav-links">
+            <li class="nav-items"><a href ="#quote">GET A QUOTE</a></li>
+            <li class="nav-items"><a href ="#destination">DESTINATION</a></li>
+            <li class="nav-items"><a href ="#weather">WEATHER</a></li>
+            
+        </ul>
+
+        
+        <img class="welcome-image" src="./assests//welcome-image.svg">
+        <div class="welcome-alignment">
+            <h4>Life is short <br> and the world is wide!</h4>
+           <b><p>Stay at the comfort of your homes and book a trip to travel <br> after the post pandemic era.</p></b> 
+            <button>PLAN A TRIP</button>
+        </div>
+        <center><p class="end-of-line">******</p></center>
+
+        <p class="weather-header">The Weather Channel</p>
+        <div style="display: flex; height: 35%;margin-top: -1%;">
+            <div style="background-color: #0D7E88; width: 30%;">
+                <p id="city1"></p>
+                <p id="temp1"></p>
+            </div>
+            <div style="background-color: #D09378;width: 30%;">
+                <p id="city2"></p>
+                <p id="temp2"></p>
+            </div>
+            <div style="background-color:#405B5D;width: 30%;">
+                <p id="city3"></p>
+                <p id="temp3"></p>
+            </div>
+            <div style="background-color: #74A748;width: 30%;">
+                <p id="city4"></p>
+                <p id="temp4"></p>
+            </div>
+        </div>
+        
+
+<p>Featured Destination</p>
+<p id = "country-names"></p>
+<img id="country-image" >
+
+
+
+
+
+
+            <img class="promo-image" src="./assests/promo-image.png">
+        <div class="promo-alignment">
+            <p style="font-size: 300%;">PLAN A TRIP</p>
+            <p style="font-size: 146%; letter-spacing: 5px;">Make your vacation the most <br> memorable one</p>
+        </div>
+
+        <center><p class="end-of-line">******</p></center>
+
+        <p class="form-inputs">Travelling as a group? Get a Quote</p>
+        <form method="POST" name = "myForm" onsubmit = "return(validate())">
+
+            Your Name 
+            <input type="text" name="Name" required>
+            Contact No 
+            <input type="text" name="Phone" required>
+            Email 
+            <input type="text" name="Email" required>
+
+        <button type="submit" style="margin-left: 34%; width: 29%; margin-top: 4%; height: 34px;" >Submit</button>
+
+           
+        </form>
+        <center><p class="end-of-line">******</p></center>
+
+        <footer>
+            <div style="display: flex; ">
+        <div class="block1">
+           <p>TripZone</p> 
+            <ul>
+                <li>
+                    About
+                </li>
+                <li>Awards</li>
+                <li>Contact Us</li>
+                <li>Feedback</li>
+            </ul>
+        </div>
+        <div class="block2">
+            <p>Main Offices</p>
+            <ul>
+                <li>The United States</li>
+                <li> India</li>
+                <li>Brazil</li>
+                <li>Canada</li>
+            </ul>
+        </div>
+        <div class="block3">
+            <p>Sub Offices</p>
+            <ul>
+                <li>Australia</li>
+                <li>England</li>
+                <li>France</li>
+                <li>Germany</li>
+            </ul>
+        </div>
+        <div class="block4">
+            <p>Disclaimer</p>
+            <p>
+                This layout is created as a part of Sirius UI Requirements. <br>All the above content has no direct relation with Sirius <br> buisness.
+            </p>
+        </div>
+    </div>
+        </footer>
+           
+
+
+        <script>
+            var countDownDate = new Date("July 10, 2022 06:00:00").getTime();
+            
+            var x = setInterval(function() {
+            
+              var now = new Date().getTime();
+                
+              var distance = countDownDate - now;
+                
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+              document.getElementById("countDown").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+                
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countDown").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+
+
+
+function validate(){
+    if( document.myForm.Name.value == "" ) {
+            alert( "Please provide your name!" );
+            document.myForm.Name.focus() ;
+            return false;
+         }
+
+         if(document.myForm.Phone.value == "" || isNaN( document.myForm.Phone.value ) ||
+            (document.myForm.Phone.value.length != 10 )){
+                alert( "Please provide valid details" );
+            document.myForm.Phone.focus() ;
+            return false;
+            }
+         if( document.myForm.Email.value == "" ) {
+            alert( "Please provide your Email!" );
+            document.myForm.EMail.focus() ;
+            return false;
+         }
+
+         return true;
+    
+}
+
+funcName("//run.mocky.io/v3/3e6901dd-9a60-4771-a8cb-9c62177a654c");
+
+
+
+async function funcName(url){
+    var image = document.getElementById("country-image");
+    var text = document.getElementById("country-names")
+    const response = await fetch(url);
+    var data = await response.json();
+    console.log(data.result);
+
+    for (var i=0; i<= data.result.length; i++){
+       text = data.result[i].city;
+       image.src =  data.result[i].imageUrl;
+        console.log( text);
+        console.log( image);
+
+    }
+    
+    }
+
+    weatherChannel("https://run.mocky.io/v3/e3ae9d2e-78f5-403d-b6cd-fa7f8c7e1576");
+
+
+    async function weatherChannel(url){
+        const res = await fetch(url);
+        var channel = await res.json();
+        console.log(channel)
+
+
+        for (var j=0; j<= channel.result.length; j++){
+            console.log(channel.result[j].city)
+            document.getElementById("city1").innerHTML = channel.result[0].city;
+            document.getElementById("city2").innerHTML = channel.result[1].city;
+            document.getElementById("city3").innerHTML = channel.result[2].city;
+            document.getElementById("city4").innerHTML = channel.result[3].city;
+            document.getElementById("temp1").innerHTML = channel.result[0].temp_Celsius;
+            document.getElementById("temp2").innerHTML = channel.result[1].temp_Celsius;
+            document.getElementById("temp3").innerHTML = channel.result[2].temp_Celsius;
+            document.getElementById("temp4").innerHTML = channel.result[3].temp_Celsius;
+
+
+        }
+    }
+
+            </script>
+
+
+    </body>
+
+   
+</html>
